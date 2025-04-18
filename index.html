@@ -1,10 +1,8 @@
-
-<!DOCTYPE html>
-<html lang="pl">
+<!DOCTYPE html><html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skup Aut - Szybka Gotówka</title>
+    <title>Docar - Skup Aut</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +16,17 @@
             color: white;
             padding: 20px;
             text-align: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px;
+            background-color: #e3f2fd;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
         }
         .container {
             padding: 30px;
@@ -52,34 +61,41 @@
 </head>
 <body>
     <header>
-        <h1>Skup Aut - Szybka Gotówka</h1>
+        <h1>Docar - Skup Aut</h1>
         <p>Konin i okolice | Gotówka od ręki | Szybka decyzja</p>
-    </header>
+    </header><section class="hero">
+    <h2>Sprzedaj swoje auto szybciej niż myślisz!</h2>
+    <p>Gotówka nawet w 15 minut. Bez gadania, bez kręcenia – po prostu konkret. Skupujemy wszystkie marki i modele!</p>
+    <img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/bmw-2179220_1280.jpg" alt="Niebieskie BMW M4">
+</section>
 
-    <div class="container">
-        <h2>Chcesz sprzedać auto?</h2>
-        <p>Wypełnij poniższy formularz, a odezwiemy się do Ciebie w ciągu 15 minut!</p>
+<div class="container">
+    <h2>Zgłoszenie samochodu</h2>
+    <p>Wypełnij poniższy formularz, a odezwiemy się do Ciebie jeszcze dziś!</p>
 
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="name">Imię i nazwisko:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Telefon kontaktowy:</label>
-                <input type="text" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="car">Marka, model, rocznik, stan techniczny:</label>
-                <textarea id="car" name="car" rows="5" required></textarea>
-            </div>
-            <button type="submit">Wyślij zgłoszenie</button>
-        </form>
-    </div>
+    <form action="https://formsubmit.co/testowymaildlaai@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nowe zgłoszenie z formularza Docar!">
+        <div class="form-group">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="Imię i nazwisko" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefon kontaktowy:</label>
+            <input type="text" id="phone" name="Telefon" required>
+        </div>
+        <div class="form-group">
+            <label for="car">Marka, model, rocznik, stan techniczny:</label>
+            <textarea id="car" name="Szczegóły auta" rows="5" required></textarea>
+        </div>
+        <button type="submit">Wyślij zgłoszenie</button>
+    </form>
+</div>
 
-    <footer>
-        <p>Skup Aut Szybka Gotówka – ul. Przykładowa 1, 62-500 Konin<br>
-        NIP: 123-456-78-90 | Tel: 500-600-700 | E-mail: kontakt@skupaut.pl</p>
-    </footer>
+<footer>
+    <p>Docar – Żychlin ul. Tuliszkowska 14D na przeciwko Hurtowni książek <br>
+    NIP:6653028461 | Tel: 723371147 | E-mail: wolf1174@wp.pl</p>
+</footer>
+
 </body>
 </html>
