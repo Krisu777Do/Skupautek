@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skup Aut - Szybka Gotówka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skup Aut - Szybka Gotówka</h1>
+        <p>Konin i okolice | Gotówka od ręki | Szybka decyzja</p>
+    </header>
+
+    <div class="container">
+        <h2>Chcesz sprzedać auto?</h2>
+        <p>Wypełnij poniższy formularz, a odezwiemy się do Ciebie w ciągu 15 minut!</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon kontaktowy:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="car">Marka, model, rocznik, stan techniczny:</label>
+                <textarea id="car" name="car" rows="5" required></textarea>
+            </div>
+            <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Skup Aut Szybka Gotówka – ul. Przykładowa 1, 62-500 Konin<br>
+        NIP: 123-456-78-90 | Tel: 500-600-700 | E-mail: kontakt@skupaut.pl</p>
+    </footer>
+</body>
+</html>
